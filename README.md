@@ -33,9 +33,9 @@ This research proves the method works and can be used with any future spacecraft
    cd Ionosphere_Tomography
    ```
 
-2. **Create a Python environment (recommended):**
+2. **Create a Python environment (optional, if you have seperate environments setup already):**
    ```sh
-   python -m venv venv
+   python3 -m venv venv
    .\venv\Scripts\activate
    ```
 
@@ -46,16 +46,14 @@ This research proves the method works and can be used with any future spacecraft
 
 4. **Run the main simulation:**
    ```sh
-   python reconstruction_main_both_HF_VHF_withdelT_modular_old_rt copy another_5am_conc.py
+   python3 <file-name>.py
    ```
 
 ## Project Structure
 
-- `reconstruction_main_both_HF_VHF_withdelT_modular_old_rt copy another_5am_conc.py`: Main tomography script
 - Supporting modules: `modify_df.py`, `ionosphere_design.py`, `ray_trace_passive.py`, `improved_geometry.py`
-- `data/`: Input data files
 - `img/`: Output figures
 
-## Citation
+## Acknowledgement
 
-If you use this code, please cite the associated AGU abstract and references above.
+This work belongs to Adhitya Sripennem under the guidance of Dr.Sean Peters.
